@@ -1,21 +1,13 @@
 #include <stdio.h>
-/**
- * print_chessboard - function that prints the chessboard.
- * @a: input matrix
- *
- * Return: void
- */
-
 void print_chessboard(char (*a)[8])
 {
-	int i;
-	int j;
+	int row, col;
 
-	for (i = 0; i < 8; i++)
+	for (row = 0; row < 8; row++)
 	{
-		for (j = 0; j < 8; j++)
+		for (col = 0; col < 8; col++)
 		{
-			_putchar(a[i][j]);
+			_putchar(a[row][col]);
 		}
 		_putchar('\n');
 	}
